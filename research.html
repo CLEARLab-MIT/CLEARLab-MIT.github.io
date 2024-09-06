@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Research</title>
+  
+  <meta name="author" content="Andreea Bobu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="images/mit-favicon.ico">
+</head>
+
+
+
+<div class="header" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-bottom:0px">
+  <!-- <a href="index.html" class="logo" style="color:black;font-size:18px; padding-top:30px"><img src="images/clear_logo.png" height="80"></a> -->
+  <a href="index.html" class="logo" style="color:black;font-size:28px; padding-top:59px"><nobr><em>CLEAR Interaction @ MIT</em></nobr></a>
+  <div class="header-right" style="padding-top:50px;">
+    <a href="research.html" style="font-size: 23px; color:black">Research</a>
+    <a href="publications.html" style="font-size: 23px; color:black">Publications</a>
+    <a href="people.html" style="font-size: 23px; color:black">People</a>
+    <a href="join.html" style="font-size: 23px; color:black">Join</a>
+  </div>
+</div>
+
+
+<body>
+
+<table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+  <tr style="padding:0px">
+    <td style="padding:0px">
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+    <tr>
+      <td>
+        <p>
+          As autonomous agents become increasingly woven into the fabric of society—from self-driving cars to personal robot manipulators to AI assistants—our lab aims to ensure their seamless interaction with people.
+          However, integrating these systems into human-centered environments in a way that aligns with human expectations is a formidable challenge.
+          Specifying human objectives to robots is difficult because these objectives are complex, context-dependent, and inherently subjective. 
+          Without the right objectives, autonomous systems may exhibit unexpected or even dangerous behaviors.
+        </p>
+
+        <p>
+          <i>Learning</i> these objectives (for instance, as reward functions) has emerged as a popular alternative to manual specification, but it comes with its own set of difficulties:
+          1) getting the <i>right data</i> to supervise the learning is hard because humans are imperfect, not infinitely queryable, and have unique and changing preferences;
+          2) the <i>representations</i> we choose to mathematically express human objectives may themselves be wrong, thus preventing us from ever being able to capture desired behaviors;
+          3) reliably <i>quantifying misalignment</i>—or discrepancies from expected behavior—to ensure system safety remains underexplored.
+        </p>
+        <blockquote>
+          <i>
+            <nobr><em>Our goal is to develop autonomous agents whose behavior aligns with human expectations</em></nobr>—whether the human is an expert system designer, a novice end-user, or another AI stakeholder.
+            Our research combines expertise from robotics, deep learning, cognitive psychology, and probabilistic reasoning to develop more aligned, generalizable, and robust learning algorithms.
+          </i>
+        </blockquote>
+
+        <h4><nobr><em>Asking for the <i>Right Data</i></em></nobr></h4>
+
+        <p>
+          Typical methods that learn from human feedback (e.g. RLHF) treat humans as infinitely queryable oracles. 
+          However, individual humans have unique and evolving preferences, objectives, and biases that may not be fully reflected in canned internet data.
+          Our research explores ways to effectively learn human objectives from noisy, incomplete, or inconsistent data. 
+          We focus on designing algorithms that can extract meaningful information from limited interactions, using structure, simulation, and powerful priors.
+          This allows autonomous systems to better understand and anticipate human needs.
+          <br><br>
+          <img src="images/right_data.gif" alt="Getting the right data from humans" class="center" style="width:80%">
+        </p>
+
+        <h4><nobr><em>Interactively Arriving at Shared Task <i>Representations</i></em></nobr></h4>
+
+        <p>
+          To act in the world, robots rely on a <i>representation</i> of salient task features: for example, to hand over a cup of coffee, the robot may consider efficiency and cup orientation in its behavior. 
+          But if we want robots to act <i>for and with people</i>, their representations must not be just functional but also reflective of what humans care about, i.e. they must be <it>aligned</it> with humans. 
+          If they're not, misalignment could lead to unintended and potentially harmful behavior; for example, we saw a robot arm move a coffee cup inches away from a person's face because it lacked an understanding of personal space.
+          Our research focuses on aligning robot representations with humans via interactive processes where robots and humans can find shared task representations.
+          <br><br>
+          <img src="images/representations.gif" alt="Interactively arriving at shared representations" class="center" style="width:80%">
+        </p>
+
+        <h4><nobr><em>Reliably <i>Quantifying Misalignment</i></em></nobr></h4>
+
+        <p>
+          A key component of ensuring reliable autonomous systems is the ability to quantify how well a system's behavior aligns with human expectations.
+          An autonomous agent should know when it doesn't know enough, and either ask for help or learn in proportion to how confident it is in its model.
+          Our research aims to develop metrics and methods to detect and correct misalignment, ensuring that autonomous systems behave predictably and safely in diverse situations.
+          This includes exploring probabilistic reasoning and cognitive psychology to understand and mitigate the risks associated with misalignment.
+          <br><br>
+          <img src="images/misalignment.gif" alt="Quantifying misalignment" class="center" style="width:80%">
+        </p>
+
+        <p>
+          Check out our TEDxMIT talk on why robots aren't superhuman in our human world to get a sense of our research philosophy!
+        </p>
+        <p align="center">
+          <iframe width="704" height="396" src="https://www.youtube.com/embed/iHmi1jMNTDU?si=S01BSWM_uOgA6uTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+
+      </td>
+    </tr>
+  </tbody>
+  </table>
+
+   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="padding-top:0px;">
+    <tbody>
+      <tr>
+      <td>
+      <br>
+      <!-- <hr> -->
+      <p></p>
+      <br><br>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
